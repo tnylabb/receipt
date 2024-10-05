@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* -------- Szinek -------- */
+
 * {
     font-family: 'Roboto';
     font-weight: 500;
+    --hue: 240;
+    --first-color: hsl(var(--hue), 16%, 18%);
+    --first-color-alt: hsl(var(--hue), 16%, 12%);
 }
+
+
+
 body {
     background-color: #242424;
     padding: 20px;
@@ -12,6 +20,9 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+
+
 .receipt {
     max-width: 600px;
     width: 100%;
@@ -23,12 +34,18 @@ body {
     text-align: center;
     position: relative;
 }
+
+
+
 h1 {
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
     text-shadow: #ffffff98 0px 00px 15px;
 }
+
+/* -------- Táblázat -------- */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -53,6 +70,7 @@ th {
     border-top: 2.8px solid rgb(255, 255, 255);
 }
 
+/* -------- Gradient border --------*/
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -86,4 +104,80 @@ th {
     to {
         --angle: 360deg;
     }
+}
+
+/* -------- Gombok -------- */
+
+#delete-item,
+#add-item
+{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 0.2rem 0.625rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+#delete-item:hover {
+    background-color: var(--first-color-alt);
+}
+
+
+/* -------- Form formázása -------- */
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    align-items: center;
+    
+}
+
+label {
+    flex: 0 0 30%;
+    margin-right: 10px;
+}
+
+.input-container {
+    flex: 1;
+    
+}
+
+input, select,option {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#add-item{
+    margin-top: 20px;
+    padding: 10px 15px
+}
+
+.form-error {
+    border: 2px solid red;
+    border-radius: 16px;
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px); }
+    50% { transform: translate(5px); }
+    75% { transform: translate(-5px); }
+    100% { transform: translate(0); }
 }
