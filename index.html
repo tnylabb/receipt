@@ -7,6 +7,77 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="receipt">
+        <h1>Számla Blokk</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Megnevezés</th>
+                    <th class="centered">Mennyiség * Egységár</th>
+                    <th>Érték</th>
+                    <th>ÁFAkulcs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Termékek -->
+                    <tr>
+                        <td>Akkumulátor 62AH</td>
+                        <td class="centered">1 db * 44 990,00 Ft</td>
+                        <td class="amount">44 990,00 Ft</td>
+                        <td>A00</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Porszívó</td>
+                        <td class="centered">1 db * 99 990,00 Ft</td>
+                        <td class="amount">99 990,00 Ft</td>
+                        <td>A00</td>
+                    </tr>
+
+
+                    <tr>                    
+                        <td>Mosogatógép</td>
+                        <td class="centered">1 db * 249 990,00 Ft</td>
+                        <td class="amount">249 990,00 Ft</td>
+                        <td>A00</td>
+                    </tr>
+
+
+                
+                    <!-- Kedvezmény -->
+                    <tr>
+                        <td colspan="2" class="sale">Kedvezmény:</td>
+                        <td class="amount">- 5 000,00 Ft</td>
+                        <td>eC00</td>
+                    </tr>
+                </tr>
+
+
+                <!-- Részösszeg -->
+                <tr class="summary">
+                    <td colspan="2">Részösszeg:</td>
+                    <td>389 970,00 Ft</td>
+                    <td></td>
+                </tr>
+
+
+                <!-- Áfa -->
+                <tr>
+                    <td colspan="2">Áfa</td>
+                    <td>105 292,00Ft</td>
+                    <td>27%</td>
+                </tr>
+
+
+                <!-- Összesen -->
+                <tr class="total-row">
+                    <td colspan="2">Összesen:</td>
+                    <td><strong> 495 262,00 Ft</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
