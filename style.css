@@ -1,1 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #242424;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.receipt {
+    max-width: 600px;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 20px;
+    color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: #ffffff98 0px 00px 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+}
+th {
+    background-color: #353535;
+}
+.total-row {
+    font-weight: bold;
+}
+.total-row td {
+    border: none;
+}
 
+
+.summary {
+    border-top: 2px solid rgb(255, 255, 255);
+}
